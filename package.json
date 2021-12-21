@@ -25,5 +25,8 @@
     "extraFiles": [
       "credentials.json"
     ]
+  },
+  "dependencies": {
+    "ffbinaries-extra": "^1.1.1"
   }
 }

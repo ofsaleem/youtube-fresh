@@ -2,6 +2,8 @@ const { app, BrowserWindow } = require('electron')
 // include the Node.js 'path' module at the top of your file
 const path = require('path')
 
+const ffbinaries = require('ffbinaries-extra');
+
 function createWindow () {
     const win = new BrowserWindow({
       width: 1280,
