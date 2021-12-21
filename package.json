@@ -7,5 +7,8 @@
   "packageManager": "yarn@3.1.1",
   "devDependencies": {
     "electron": "^16.0.5"
+  },
+  "scripts": {
+    "start": "yarn install && electron ."
   }
 }
