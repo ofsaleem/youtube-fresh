@@ -1,3 +1,10 @@
+ffmpeg.exe
+ffprobe.exe
+*.avi
+credentials.json
+*.mp4
+/dist/
+/node_modules/
 /.yarn/*
 !/.yarn/patches
 !/.yarn/plugins
