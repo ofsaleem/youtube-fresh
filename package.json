@@ -1,4 +1,11 @@
 {
   "name": "youtube-fresh",
-  "packageManager": "yarn@3.1.1"
+  "version:": "0.0.1",
+  "description": "fresh start for youtube project",
+  "author": "github.com/ofsaleem",
+  "main": "main.js",
+  "packageManager": "yarn@3.1.1",
+  "devDependencies": {
+    "electron": "^16.0.5"
+  }
 }

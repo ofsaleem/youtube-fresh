@@ -35,15 +35,931 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["electron", "npm:16.0.5"]
           ],
           "linkType": "SOFT",
+        }]
+      ]],
+      ["@electron/get", [
+        ["npm:1.13.1", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@electron-get-npm-1.13.1-276dd8de13-8.zip/node_modules/@electron/get/",
+          "packageDependencies": [
+            ["@electron/get", "npm:1.13.1"],
+            ["debug", "virtual:b6973781e392254c97fa686b079ac8a3068bc90c368e2e899e7d7efc0c52ea6275876de0a03a658416e15deb76ac1ae9f6c75220e70d7e439033e50481430a6a#npm:4.3.3"],
+            ["env-paths", "npm:2.2.1"],
+            ["fs-extra", "npm:8.1.0"],
+            ["global-agent", "npm:3.0.0"],
+            ["global-tunnel-ng", "npm:2.7.1"],
+            ["got", "npm:9.6.0"],
+            ["progress", "npm:2.0.3"],
+            ["semver", "npm:6.3.0"],
+            ["sumchecker", "npm:3.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@sindresorhus/is", [
+        ["npm:0.14.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@sindresorhus-is-npm-0.14.0-9f906ea34b-8.zip/node_modules/@sindresorhus/is/",
+          "packageDependencies": [
+            ["@sindresorhus/is", "npm:0.14.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@szmarczak/http-timer", [
+        ["npm:1.1.2", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@szmarczak-http-timer-npm-1.1.2-ea82ca2d55-8.zip/node_modules/@szmarczak/http-timer/",
+          "packageDependencies": [
+            ["@szmarczak/http-timer", "npm:1.1.2"],
+            ["defer-to-connect", "npm:1.1.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/keyv", [
+        ["npm:3.1.3", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-keyv-npm-3.1.3-8864e3cbf3-8.zip/node_modules/@types/keyv/",
+          "packageDependencies": [
+            ["@types/keyv", "npm:3.1.3"],
+            ["@types/node", "npm:17.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/node", [
+        ["npm:14.18.2", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-node-npm-14.18.2-55e1fc5973-8.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:14.18.2"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:17.0.2", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-node-npm-17.0.2-7997a6cde7-8.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:17.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/responselike", [
+        ["npm:1.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-responselike-npm-1.0.0-85dd08af42-8.zip/node_modules/@types/responselike/",
+          "packageDependencies": [
+            ["@types/responselike", "npm:1.0.0"],
+            ["@types/node", "npm:17.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["boolean", [
+        ["npm:3.1.4", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/boolean-npm-3.1.4-c5771246a3-8.zip/node_modules/boolean/",
+          "packageDependencies": [
+            ["boolean", "npm:3.1.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["buffer-crc32", [
+        ["npm:0.2.13", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/buffer-crc32-npm-0.2.13-c4b6fceac1-8.zip/node_modules/buffer-crc32/",
+          "packageDependencies": [
+            ["buffer-crc32", "npm:0.2.13"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["buffer-from", [
+        ["npm:1.1.2", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/buffer-from-npm-1.1.2-03d2f20d7e-8.zip/node_modules/buffer-from/",
+          "packageDependencies": [
+            ["buffer-from", "npm:1.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["cacheable-request", [
+        ["npm:6.1.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/cacheable-request-npm-6.1.0-684b834873-8.zip/node_modules/cacheable-request/",
+          "packageDependencies": [
+            ["cacheable-request", "npm:6.1.0"],
+            ["clone-response", "npm:1.0.2"],
+            ["get-stream", "npm:5.2.0"],
+            ["http-cache-semantics", "npm:4.1.0"],
+            ["keyv", "npm:3.1.0"],
+            ["lowercase-keys", "npm:2.0.0"],
+            ["normalize-url", "npm:4.5.1"],
+            ["responselike", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["clone-response", [
+        ["npm:1.0.2", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/clone-response-npm-1.0.2-135ae8239d-8.zip/node_modules/clone-response/",
+          "packageDependencies": [
+            ["clone-response", "npm:1.0.2"],
+            ["mimic-response", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["concat-stream", [
+        ["npm:1.6.2", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/concat-stream-npm-1.6.2-2bee337060-8.zip/node_modules/concat-stream/",
+          "packageDependencies": [
+            ["concat-stream", "npm:1.6.2"],
+            ["buffer-from", "npm:1.1.2"],
+            ["inherits", "npm:2.0.4"],
+            ["readable-stream", "npm:2.3.7"],
+            ["typedarray", "npm:0.0.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["config-chain", [
+        ["npm:1.1.13", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/config-chain-npm-1.1.13-82e06afbc4-8.zip/node_modules/config-chain/",
+          "packageDependencies": [
+            ["config-chain", "npm:1.1.13"],
+            ["ini", "npm:1.3.8"],
+            ["proto-list", "npm:1.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["core-util-is", [
+        ["npm:1.0.3", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/core-util-is-npm-1.0.3-ca74b76c90-8.zip/node_modules/core-util-is/",
+          "packageDependencies": [
+            ["core-util-is", "npm:1.0.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["debug", [
+        ["npm:2.6.9", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/debug-npm-2.6.9-7d4cb597dc-8.zip/node_modules/debug/",
+          "packageDependencies": [
+            ["debug", "npm:2.6.9"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["npm:4.3.3", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/debug-npm-4.3.3-710fd4cc7f-8.zip/node_modules/debug/",
+          "packageDependencies": [
+            ["debug", "npm:4.3.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:1a60d4ee7ccf7e46b1396489be5b672ed167f566f1b9109bc5c6d658323da6d19faa6a16669ec2dc318f884a0c23bed4af4c25a275551bc8fd48d39771ae009a#npm:2.6.9", {
+          "packageLocation": "./.yarn/__virtual__/debug-virtual-e3d3eab08d/4/AppData/Local/Yarn/Berry/cache/debug-npm-2.6.9-7d4cb597dc-8.zip/node_modules/debug/",
+          "packageDependencies": [
+            ["debug", "virtual:1a60d4ee7ccf7e46b1396489be5b672ed167f566f1b9109bc5c6d658323da6d19faa6a16669ec2dc318f884a0c23bed4af4c25a275551bc8fd48d39771ae009a#npm:2.6.9"],
+            ["@types/supports-color", null],
+            ["ms", "npm:2.0.0"],
+            ["supports-color", null]
+          ],
+          "packagePeers": [
+            "@types/supports-color",
+            "supports-color"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:b6973781e392254c97fa686b079ac8a3068bc90c368e2e899e7d7efc0c52ea6275876de0a03a658416e15deb76ac1ae9f6c75220e70d7e439033e50481430a6a#npm:4.3.3", {
+          "packageLocation": "./.yarn/__virtual__/debug-virtual-bcea2b9207/4/AppData/Local/Yarn/Berry/cache/debug-npm-4.3.3-710fd4cc7f-8.zip/node_modules/debug/",
+          "packageDependencies": [
+            ["debug", "virtual:b6973781e392254c97fa686b079ac8a3068bc90c368e2e899e7d7efc0c52ea6275876de0a03a658416e15deb76ac1ae9f6c75220e70d7e439033e50481430a6a#npm:4.3.3"],
+            ["@types/supports-color", null],
+            ["ms", "npm:2.1.2"],
+            ["supports-color", null]
+          ],
+          "packagePeers": [
+            "@types/supports-color",
+            "supports-color"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["decompress-response", [
+        ["npm:3.3.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/decompress-response-npm-3.3.0-6e7b6375c3-8.zip/node_modules/decompress-response/",
+          "packageDependencies": [
+            ["decompress-response", "npm:3.3.0"],
+            ["mimic-response", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["defer-to-connect", [
+        ["npm:1.1.3", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/defer-to-connect-npm-1.1.3-5887885147-8.zip/node_modules/defer-to-connect/",
+          "packageDependencies": [
+            ["defer-to-connect", "npm:1.1.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["define-properties", [
+        ["npm:1.1.3", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/define-properties-npm-1.1.3-0f3115e2b9-8.zip/node_modules/define-properties/",
+          "packageDependencies": [
+            ["define-properties", "npm:1.1.3"],
+            ["object-keys", "npm:1.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["detect-node", [
+        ["npm:2.1.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/detect-node-npm-2.1.0-e8de0e94f7-8.zip/node_modules/detect-node/",
+          "packageDependencies": [
+            ["detect-node", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["duplexer3", [
+        ["npm:0.1.4", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/duplexer3-npm-0.1.4-361a33d994-8.zip/node_modules/duplexer3/",
+          "packageDependencies": [
+            ["duplexer3", "npm:0.1.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["electron", [
+        ["npm:16.0.5", {
+          "packageLocation": "./.yarn/unplugged/electron-npm-16.0.5-581271567f/node_modules/electron/",
+          "packageDependencies": [
+            ["electron", "npm:16.0.5"],
+            ["@electron/get", "npm:1.13.1"],
+            ["@types/node", "npm:14.18.2"],
+            ["extract-zip", "npm:1.7.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["encodeurl", [
+        ["npm:1.0.2", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/encodeurl-npm-1.0.2-f8c8454c41-8.zip/node_modules/encodeurl/",
+          "packageDependencies": [
+            ["encodeurl", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["end-of-stream", [
+        ["npm:1.4.4", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/end-of-stream-npm-1.4.4-497fc6dee1-8.zip/node_modules/end-of-stream/",
+          "packageDependencies": [
+            ["end-of-stream", "npm:1.4.4"],
+            ["once", "npm:1.4.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["env-paths", [
+        ["npm:2.2.1", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/env-paths-npm-2.2.1-7c7577428c-8.zip/node_modules/env-paths/",
+          "packageDependencies": [
+            ["env-paths", "npm:2.2.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["es6-error", [
+        ["npm:4.1.1", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/es6-error-npm-4.1.1-5e8c22b20f-8.zip/node_modules/es6-error/",
+          "packageDependencies": [
+            ["es6-error", "npm:4.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["escape-string-regexp", [
+        ["npm:4.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/escape-string-regexp-npm-4.0.0-4b531d8d59-8.zip/node_modules/escape-string-regexp/",
+          "packageDependencies": [
+            ["escape-string-regexp", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["extract-zip", [
+        ["npm:1.7.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/extract-zip-npm-1.7.0-1a60d4ee7c-8.zip/node_modules/extract-zip/",
+          "packageDependencies": [
+            ["extract-zip", "npm:1.7.0"],
+            ["concat-stream", "npm:1.6.2"],
+            ["debug", "virtual:1a60d4ee7ccf7e46b1396489be5b672ed167f566f1b9109bc5c6d658323da6d19faa6a16669ec2dc318f884a0c23bed4af4c25a275551bc8fd48d39771ae009a#npm:2.6.9"],
+            ["mkdirp", "npm:0.5.5"],
+            ["yauzl", "npm:2.10.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["fd-slicer", [
+        ["npm:1.1.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/fd-slicer-npm-1.1.0-3cade0050a-8.zip/node_modules/fd-slicer/",
+          "packageDependencies": [
+            ["fd-slicer", "npm:1.1.0"],
+            ["pend", "npm:1.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["fs-extra", [
+        ["npm:8.1.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/fs-extra-npm-8.1.0-197473387f-8.zip/node_modules/fs-extra/",
+          "packageDependencies": [
+            ["fs-extra", "npm:8.1.0"],
+            ["graceful-fs", "npm:4.2.8"],
+            ["jsonfile", "npm:4.0.0"],
+            ["universalify", "npm:0.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["get-stream", [
+        ["npm:4.1.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/get-stream-npm-4.1.0-314d430a5d-8.zip/node_modules/get-stream/",
+          "packageDependencies": [
+            ["get-stream", "npm:4.1.0"],
+            ["pump", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:5.2.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/get-stream-npm-5.2.0-2cfd3b452b-8.zip/node_modules/get-stream/",
+          "packageDependencies": [
+            ["get-stream", "npm:5.2.0"],
+            ["pump", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["global-agent", [
+        ["npm:3.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/global-agent-npm-3.0.0-44e12bb199-8.zip/node_modules/global-agent/",
+          "packageDependencies": [
+            ["global-agent", "npm:3.0.0"],
+            ["boolean", "npm:3.1.4"],
+            ["es6-error", "npm:4.1.1"],
+            ["matcher", "npm:3.0.0"],
+            ["roarr", "npm:2.15.4"],
+            ["semver", "npm:7.3.5"],
+            ["serialize-error", "npm:7.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["global-tunnel-ng", [
+        ["npm:2.7.1", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/global-tunnel-ng-npm-2.7.1-0f22380ecc-8.zip/node_modules/global-tunnel-ng/",
+          "packageDependencies": [
+            ["global-tunnel-ng", "npm:2.7.1"],
+            ["encodeurl", "npm:1.0.2"],
+            ["lodash", "npm:4.17.21"],
+            ["npm-conf", "npm:1.1.3"],
+            ["tunnel", "npm:0.0.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["globalthis", [
+        ["npm:1.0.2", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/globalthis-npm-1.0.2-061a9a4217-8.zip/node_modules/globalthis/",
+          "packageDependencies": [
+            ["globalthis", "npm:1.0.2"],
+            ["define-properties", "npm:1.1.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["got", [
+        ["npm:9.6.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/got-npm-9.6.0-80edc15fd0-8.zip/node_modules/got/",
+          "packageDependencies": [
+            ["got", "npm:9.6.0"],
+            ["@sindresorhus/is", "npm:0.14.0"],
+            ["@szmarczak/http-timer", "npm:1.1.2"],
+            ["@types/keyv", "npm:3.1.3"],
+            ["@types/responselike", "npm:1.0.0"],
+            ["cacheable-request", "npm:6.1.0"],
+            ["decompress-response", "npm:3.3.0"],
+            ["duplexer3", "npm:0.1.4"],
+            ["get-stream", "npm:4.1.0"],
+            ["lowercase-keys", "npm:1.0.1"],
+            ["mimic-response", "npm:1.0.1"],
+            ["p-cancelable", "npm:1.1.0"],
+            ["to-readable-stream", "npm:1.0.0"],
+            ["url-parse-lax", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["graceful-fs", [
+        ["npm:4.2.8", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/graceful-fs-npm-4.2.8-37c16fc3d3-8.zip/node_modules/graceful-fs/",
+          "packageDependencies": [
+            ["graceful-fs", "npm:4.2.8"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["http-cache-semantics", [
+        ["npm:4.1.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/http-cache-semantics-npm-4.1.0-860520a31f-8.zip/node_modules/http-cache-semantics/",
+          "packageDependencies": [
+            ["http-cache-semantics", "npm:4.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["inherits", [
+        ["npm:2.0.4", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/inherits-npm-2.0.4-c66b3957a0-8.zip/node_modules/inherits/",
+          "packageDependencies": [
+            ["inherits", "npm:2.0.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["ini", [
+        ["npm:1.3.8", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/ini-npm-1.3.8-fb5040b4c0-8.zip/node_modules/ini/",
+          "packageDependencies": [
+            ["ini", "npm:1.3.8"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["isarray", [
+        ["npm:1.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/isarray-npm-1.0.0-db4f547720-8.zip/node_modules/isarray/",
+          "packageDependencies": [
+            ["isarray", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["json-buffer", [
+        ["npm:3.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/json-buffer-npm-3.0.0-21c267a314-8.zip/node_modules/json-buffer/",
+          "packageDependencies": [
+            ["json-buffer", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["json-stringify-safe", [
+        ["npm:5.0.1", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/json-stringify-safe-npm-5.0.1-064ddd6ab4-8.zip/node_modules/json-stringify-safe/",
+          "packageDependencies": [
+            ["json-stringify-safe", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["jsonfile", [
+        ["npm:4.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/jsonfile-npm-4.0.0-10ce3aea15-8.zip/node_modules/jsonfile/",
+          "packageDependencies": [
+            ["jsonfile", "npm:4.0.0"],
+            ["graceful-fs", "npm:4.2.8"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["keyv", [
+        ["npm:3.1.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/keyv-npm-3.1.0-81c9ff4454-8.zip/node_modules/keyv/",
+          "packageDependencies": [
+            ["keyv", "npm:3.1.0"],
+            ["json-buffer", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["lodash", [
+        ["npm:4.17.21", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/lodash-npm-4.17.21-6382451519-8.zip/node_modules/lodash/",
+          "packageDependencies": [
+            ["lodash", "npm:4.17.21"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["lowercase-keys", [
+        ["npm:1.0.1", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/lowercase-keys-npm-1.0.1-0979e653b8-8.zip/node_modules/lowercase-keys/",
+          "packageDependencies": [
+            ["lowercase-keys", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/lowercase-keys-npm-2.0.0-1876065a32-8.zip/node_modules/lowercase-keys/",
+          "packageDependencies": [
+            ["lowercase-keys", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["lru-cache", [
+        ["npm:6.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/lru-cache-npm-6.0.0-b4c8668fe1-8.zip/node_modules/lru-cache/",
+          "packageDependencies": [
+            ["lru-cache", "npm:6.0.0"],
+            ["yallist", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["matcher", [
+        ["npm:3.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/matcher-npm-3.0.0-d32d29365e-8.zip/node_modules/matcher/",
+          "packageDependencies": [
+            ["matcher", "npm:3.0.0"],
+            ["escape-string-regexp", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["mimic-response", [
+        ["npm:1.0.1", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/mimic-response-npm-1.0.1-f6f85dde84-8.zip/node_modules/mimic-response/",
+          "packageDependencies": [
+            ["mimic-response", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["minimist", [
+        ["npm:1.2.5", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/minimist-npm-1.2.5-ced0e1f617-8.zip/node_modules/minimist/",
+          "packageDependencies": [
+            ["minimist", "npm:1.2.5"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["mkdirp", [
+        ["npm:0.5.5", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/mkdirp-npm-0.5.5-6bc76534fc-8.zip/node_modules/mkdirp/",
+          "packageDependencies": [
+            ["mkdirp", "npm:0.5.5"],
+            ["minimist", "npm:1.2.5"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["ms", [
+        ["npm:2.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/ms-npm-2.0.0-9e1101a471-8.zip/node_modules/ms/",
+          "packageDependencies": [
+            ["ms", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.1.2", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/ms-npm-2.1.2-ec0c1512ff-8.zip/node_modules/ms/",
+          "packageDependencies": [
+            ["ms", "npm:2.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["normalize-url", [
+        ["npm:4.5.1", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/normalize-url-npm-4.5.1-603d40bc18-8.zip/node_modules/normalize-url/",
+          "packageDependencies": [
+            ["normalize-url", "npm:4.5.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["npm-conf", [
+        ["npm:1.1.3", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/npm-conf-npm-1.1.3-e2833445bb-8.zip/node_modules/npm-conf/",
+          "packageDependencies": [
+            ["npm-conf", "npm:1.1.3"],
+            ["config-chain", "npm:1.1.13"],
+            ["pify", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["object-keys", [
+        ["npm:1.1.1", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/object-keys-npm-1.1.1-1bf2f1be93-8.zip/node_modules/object-keys/",
+          "packageDependencies": [
+            ["object-keys", "npm:1.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["once", [
+        ["npm:1.4.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/once-npm-1.4.0-ccf03ef07a-8.zip/node_modules/once/",
+          "packageDependencies": [
+            ["once", "npm:1.4.0"],
+            ["wrappy", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["p-cancelable", [
+        ["npm:1.1.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/p-cancelable-npm-1.1.0-d147d5996f-8.zip/node_modules/p-cancelable/",
+          "packageDependencies": [
+            ["p-cancelable", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["pend", [
+        ["npm:1.2.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/pend-npm-1.2.0-7a13d93266-8.zip/node_modules/pend/",
+          "packageDependencies": [
+            ["pend", "npm:1.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["pify", [
+        ["npm:3.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/pify-npm-3.0.0-679ee405c8-8.zip/node_modules/pify/",
+          "packageDependencies": [
+            ["pify", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["prepend-http", [
+        ["npm:2.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/prepend-http-npm-2.0.0-e1fc4332f2-8.zip/node_modules/prepend-http/",
+          "packageDependencies": [
+            ["prepend-http", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["process-nextick-args", [
+        ["npm:2.0.1", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/process-nextick-args-npm-2.0.1-b8d7971609-8.zip/node_modules/process-nextick-args/",
+          "packageDependencies": [
+            ["process-nextick-args", "npm:2.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["progress", [
+        ["npm:2.0.3", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/progress-npm-2.0.3-d1f87e2ac6-8.zip/node_modules/progress/",
+          "packageDependencies": [
+            ["progress", "npm:2.0.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["proto-list", [
+        ["npm:1.2.4", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/proto-list-npm-1.2.4-a96a43df28-8.zip/node_modules/proto-list/",
+          "packageDependencies": [
+            ["proto-list", "npm:1.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["pump", [
+        ["npm:3.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/pump-npm-3.0.0-0080bf6a7a-8.zip/node_modules/pump/",
+          "packageDependencies": [
+            ["pump", "npm:3.0.0"],
+            ["end-of-stream", "npm:1.4.4"],
+            ["once", "npm:1.4.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["readable-stream", [
+        ["npm:2.3.7", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/readable-stream-npm-2.3.7-77b22a9818-8.zip/node_modules/readable-stream/",
+          "packageDependencies": [
+            ["readable-stream", "npm:2.3.7"],
+            ["core-util-is", "npm:1.0.3"],
+            ["inherits", "npm:2.0.4"],
+            ["isarray", "npm:1.0.0"],
+            ["process-nextick-args", "npm:2.0.1"],
+            ["safe-buffer", "npm:5.1.2"],
+            ["string_decoder", "npm:1.1.1"],
+            ["util-deprecate", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["responselike", [
+        ["npm:1.0.2", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/responselike-npm-1.0.2-d0bf50cde4-8.zip/node_modules/responselike/",
+          "packageDependencies": [
+            ["responselike", "npm:1.0.2"],
+            ["lowercase-keys", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["roarr", [
+        ["npm:2.15.4", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/roarr-npm-2.15.4-a3dcbf0852-8.zip/node_modules/roarr/",
+          "packageDependencies": [
+            ["roarr", "npm:2.15.4"],
+            ["boolean", "npm:3.1.4"],
+            ["detect-node", "npm:2.1.0"],
+            ["globalthis", "npm:1.0.2"],
+            ["json-stringify-safe", "npm:5.0.1"],
+            ["semver-compare", "npm:1.0.0"],
+            ["sprintf-js", "npm:1.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["safe-buffer", [
+        ["npm:5.1.2", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/safe-buffer-npm-5.1.2-c27fedf6c4-8.zip/node_modules/safe-buffer/",
+          "packageDependencies": [
+            ["safe-buffer", "npm:5.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["semver", [
+        ["npm:6.3.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/semver-npm-6.3.0-b3eace8bfd-8.zip/node_modules/semver/",
+          "packageDependencies": [
+            ["semver", "npm:6.3.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:7.3.5", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/semver-npm-7.3.5-618cf5db6a-8.zip/node_modules/semver/",
+          "packageDependencies": [
+            ["semver", "npm:7.3.5"],
+            ["lru-cache", "npm:6.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["semver-compare", [
+        ["npm:1.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/semver-compare-npm-1.0.0-33f7033df0-8.zip/node_modules/semver-compare/",
+          "packageDependencies": [
+            ["semver-compare", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["serialize-error", [
+        ["npm:7.0.1", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/serialize-error-npm-7.0.1-c0b3f881a0-8.zip/node_modules/serialize-error/",
+          "packageDependencies": [
+            ["serialize-error", "npm:7.0.1"],
+            ["type-fest", "npm:0.13.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["sprintf-js", [
+        ["npm:1.1.2", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/sprintf-js-npm-1.1.2-ea16269a6d-8.zip/node_modules/sprintf-js/",
+          "packageDependencies": [
+            ["sprintf-js", "npm:1.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["string_decoder", [
+        ["npm:1.1.1", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/string_decoder-npm-1.1.1-e46a6c1353-8.zip/node_modules/string_decoder/",
+          "packageDependencies": [
+            ["string_decoder", "npm:1.1.1"],
+            ["safe-buffer", "npm:5.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["sumchecker", [
+        ["npm:3.0.1", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/sumchecker-npm-3.0.1-b6973781e3-8.zip/node_modules/sumchecker/",
+          "packageDependencies": [
+            ["sumchecker", "npm:3.0.1"],
+            ["debug", "virtual:b6973781e392254c97fa686b079ac8a3068bc90c368e2e899e7d7efc0c52ea6275876de0a03a658416e15deb76ac1ae9f6c75220e70d7e439033e50481430a6a#npm:4.3.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["to-readable-stream", [
+        ["npm:1.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/to-readable-stream-npm-1.0.0-4fa4da8130-8.zip/node_modules/to-readable-stream/",
+          "packageDependencies": [
+            ["to-readable-stream", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["tunnel", [
+        ["npm:0.0.6", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/tunnel-npm-0.0.6-b1c0830ea4-8.zip/node_modules/tunnel/",
+          "packageDependencies": [
+            ["tunnel", "npm:0.0.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["type-fest", [
+        ["npm:0.13.1", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/type-fest-npm-0.13.1-7f4486b973-8.zip/node_modules/type-fest/",
+          "packageDependencies": [
+            ["type-fest", "npm:0.13.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["typedarray", [
+        ["npm:0.0.6", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/typedarray-npm-0.0.6-37638b2241-8.zip/node_modules/typedarray/",
+          "packageDependencies": [
+            ["typedarray", "npm:0.0.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["universalify", [
+        ["npm:0.1.2", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/universalify-npm-0.1.2-9b22d31d2d-8.zip/node_modules/universalify/",
+          "packageDependencies": [
+            ["universalify", "npm:0.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["url-parse-lax", [
+        ["npm:3.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/url-parse-lax-npm-3.0.0-92aa8effa0-8.zip/node_modules/url-parse-lax/",
+          "packageDependencies": [
+            ["url-parse-lax", "npm:3.0.0"],
+            ["prepend-http", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["util-deprecate", [
+        ["npm:1.0.2", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/util-deprecate-npm-1.0.2-e3fe1a219c-8.zip/node_modules/util-deprecate/",
+          "packageDependencies": [
+            ["util-deprecate", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["wrappy", [
+        ["npm:1.0.2", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/wrappy-npm-1.0.2-916de4d4b3-8.zip/node_modules/wrappy/",
+          "packageDependencies": [
+            ["wrappy", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["yallist", [
+        ["npm:4.0.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/yallist-npm-4.0.0-b493d9e907-8.zip/node_modules/yallist/",
+          "packageDependencies": [
+            ["yallist", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["yauzl", [
+        ["npm:2.10.0", {
+          "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/yauzl-npm-2.10.0-72e70ea021-8.zip/node_modules/yauzl/",
+          "packageDependencies": [
+            ["yauzl", "npm:2.10.0"],
+            ["buffer-crc32", "npm:0.2.13"],
+            ["fd-slicer", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["youtube-fresh", [
         ["workspace:.", {
           "packageLocation": "./",
           "packageDependencies": [
-            ["youtube-fresh", "workspace:."]
+            ["youtube-fresh", "workspace:."],
+            ["electron", "npm:16.0.5"]
           ],
           "linkType": "SOFT",
         }]
