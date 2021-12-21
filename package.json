@@ -6,9 +6,22 @@
   "main": "main.js",
   "packageManager": "yarn@3.1.1",
   "devDependencies": {
-    "electron": "^16.0.5"
+    "electron": "^16.0.5",
+    "electron-builder": "^22.14.5"
   },
   "scripts": {
     "start": "yarn install && electron ."
+  },
+  "build": {
+    "appId": "com.electron.youtube-mp3-uploader-gui-fresh",
+    "mac": {
+      "category": "public.app-category.music"
+    },
+    "win": {
+      "target": "NSIS"
+    },
+    "extraFiles": [
+        "credentials.json"
+    ]
   }
 }
