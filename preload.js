@@ -1,13 +1,16 @@
 const { contextBridge, ipcRenderer } = require('electron')
 
-const detectPlatform = () => {
-  const result = ipcRenderer.invoke('ffbinaries-detect-platform');
-  return result;
+const downloadFFBinaries = () => {
+  return ipcRenderer.invoke('get-ffbinaries').then(result => {
+    return result;
+  }).catch(() => {
+    console.log("Error determining platform");
+  });
 }
 
 contextBridge.exposeInMainWorld(
   'ffbinaries', 
   {
-    detectPlatform: () => detectPlatform()
+    downloadFFBinaries: () => downloadFFBinaries()
   }
 );
