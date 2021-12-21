@@ -23,7 +23,7 @@
       "target": "NSIS"
     },
     "extraFiles": [
-        "credentials.json"
+      "credentials.json"
     ]
   }
 }
