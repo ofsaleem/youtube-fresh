@@ -1318,7 +1318,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron@npm:^16.0.5":
+"electron@npm:16.0.5":
   version: 16.0.5
   resolution: "electron@npm:16.0.5"
   dependencies:
@@ -3811,7 +3811,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "youtube-fresh@workspace:."
   dependencies:
-    electron: ^16.0.5
+    electron: 16.0.5
     electron-builder: ^22.14.5
     ffbinaries-extra: ^1.1.1
   languageName: unknown
