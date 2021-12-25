@@ -1,5 +1,6 @@
 ffmpeg.exe
 ffprobe.exe
+/__MACOSX
 *.avi
 credentials.json
 *.mp4
