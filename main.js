@@ -30,6 +30,5 @@ const ffbinaries = require('ffbinaries-extra');
 ipcMain.handle('get-ffbinaries', async (event, arg) => {
   let platform = ffbinaries.currentPlatform;
   await ffbinaries.downloadBinaries({components: ["ffmpeg", "ffprobe"]});
-  console.log(platform)
   return platform;
 });
