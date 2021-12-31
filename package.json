@@ -27,6 +27,7 @@
     ]
   },
   "dependencies": {
-    "ffbinaries-extra": "^1.1.1"
+    "ffbinaries-extra": "^1.1.1",
+    "fluent-ffmpeg": "^2.1.2"
   }
 }
