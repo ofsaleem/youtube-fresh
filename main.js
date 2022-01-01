@@ -28,7 +28,6 @@ app.on('window-all-closed', function () {
     if (process.platform !== 'darwin') app.quit()
 })
 
-
 ipcMain.handle('get-ffbinaries', async (event, arg) => {
   let platform = ffbinaries.currentPlatform;
   await ffbinaries.downloadBinaries({components: ["ffmpeg", "ffprobe"]});
@@ -37,7 +36,7 @@ ipcMain.handle('get-ffbinaries', async (event, arg) => {
   return platform;
 });
 
-function renderWithVectorscope(mp3path, imagepath, output) {
+ipcMain.handle('ffmpeg-vectorscope', async (event, mp3path, imagepath) => {
   ffmpeg().input(mp3path).input(imagepath)
   .inputOptions(['-loop 1'])
   .complexFilter([
@@ -98,24 +97,17 @@ function renderWithVectorscope(mp3path, imagepath, output) {
   .audioChannels(2)
   .audioFrequency(48000)
   .outputOption(['-shortest'])
-  .on('start', function(commandLine) {
-      output.innerHTML += 'Spawned Ffmpeg with command: ' + commandLine + '\n' +
-      'Beginning encoding\n';
-      output.scrollTop = output.scrollHeight - output.clientHeight;
+  .on('start', (commandLine) => {
+    event.sender.send('ffmpeg-encoding-start', commandLine);
   })
-  .on('progress', function(progress) {
-      let text = output.innerHTML;
-      output.innerHTML = text.replace(/\r?\n?[^\r\n]*$/, "");
-      output.innerHTML += '\nProcessing: ' + progress.percent + '% done';
-      output.scrollTop = output.scrollHeight - output.clientHeight;
+  .on('progress', (progress) => {
+    event.sender.send('ffmpeg-encoding-progress', progress);
   })
-  .on('error', function(err) {
-      output.innerHTML += '\nAn error occurred: ' + err.message + '\n';
-      output.scrollTop = output.scrollHeight - output.clientHeight;
+  .on('error', (err) => {
+    event.sender.send('ffmpeg-encoding-error', err);
   })
-  .on('end', function() {
-      output.innerHTML += '\nOutput finished!\n';
-      output.scrollTop = output.scrollHeight - output.clientHeight;
+  .on('end', () => {
+    event.sender.send('ffmpeg-encoding-end');
   })
   .save('output.mp4');
-}
+});
