@@ -12,13 +12,13 @@ function createVideo() {
         ffmpeg.renderWithVectorscope(mp3path, imagepath);
     }
     else {
-        let fixedImageWidth = getImageWidth(imagepath);
-        renderWithWaveforms(mp3path, imagepath, fixedImageWidth);
+        let fixedImageWidth = getImageWidth(document.getElementById("imagefile"));
+        ffmpeg.renderWithWaveforms(mp3path, imagepath, fixedImageWidth);
     }
 }
 
 function getImageWidth(input) {
-    let fixedimagewidth = 600;
+    let fixedImageWidth = 600;
     let fr = new FileReader;
     fr.onload = () => {
         let img = new Image;
@@ -27,11 +27,11 @@ function getImageWidth(input) {
             let imageheight = +img.height;
             let ar = imagewidth * 1.0 / imageheight;
             ar = +(parseFloat(ar.toFixed(2)));
-            fixedimagewidth = 600 * ar;
-            fixedimagewidth = +fixedimagewidth.toFixed(0);
-            return fixedimagewidth;
+            fixedImageWidth = 600 * ar;
+            fixedImageWidth = +fixedImageWidth.toFixed(0);
         };
         img.src = fr.result;
     };
     fr.readAsDataURL(input.files[0]);
+    return fixedImageWidth;
 }
