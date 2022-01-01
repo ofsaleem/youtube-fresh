@@ -9,9 +9,13 @@ const downloadFFBinaries = () => {
 }
 
 const renderWithVectorscope = (mp3path, imagepath) => {
-  return ipcRenderer.invoke('ffmpeg-vectorscope', mp3path, imagepath).then(result => {
-    return result;
-  }).catch(() => {
+  return ipcRenderer.invoke('ffmpeg-vectorscope', mp3path, imagepath).catch(() => {
+    console.error("Error rendering output video file");
+  });
+}
+
+const renderWithWaveforms = (mp3path, imagepath, fixedImageWidth) => {
+  return ipcRenderer.invoke('ffmpeg-waveforms', mp3path, imagepath, fixedImageWidth).catch(() => {
     console.error("Error rendering output video file");
   });
 }
@@ -24,7 +28,8 @@ contextBridge.exposeInMainWorld(
 contextBridge.exposeInMainWorld(
   'ffmpeg',
   {
-    renderWithVectorscope: (mp3path, imagepath) => renderWithVectorscope(mp3path, imagepath)
+    renderWithVectorscope: (mp3path, imagepath) => renderWithVectorscope(mp3path, imagepath),
+    renderWithWaveforms: (mp3path, imagepath, fixedImageWidth) => renderWithWaveforms(mp3path, imagepath, fixedImageWidth)
   }
 );
 
